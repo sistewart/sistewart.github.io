@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+    /*padding:0;
+    margin:0;*/
+}
+body{
+    background: url(images/all_nba.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+header, section, footer{
+    margin:10px auto;
+    width: 60%;
+    padding: 5px 10px 5px 10px;
+    
+
+
+}
+header{
+    background: #d92344;
+    color: #fff;
+}
+
+section{
+    background:#e4f2f1;
+}
+
+footer{
+    background: #0477bf;
+    color:#e4f2f1;
+}
+
+nav li{
+    list-style-type: none;
+    float:left;
+    
+}
+
+nav a {
+    background:#0477bf;
+    color:#e4f2f1;
+    text-decoration: none;
+    padding:10px;
+}
+
+nav a:hover{
+    background:#e4f2f1;
+    color:#0477bf;
+}
+
+img{
+    border: solid 10px #d92344;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;   
+    float: left;
+    width: 33.33%;
+    height: 375px; 
+    
+}
+
+table, th, td{
+    border: 2px solid #7e9abf;
+    background: #f2ae2e;
+    padding: 15px;
+    margin: 10px auto;
+}
+
