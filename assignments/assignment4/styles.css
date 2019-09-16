@@ -18,8 +18,9 @@ header{
 .twocols{
 display: flex;
 background:#fff;
-border: 10px solid ##285943;
+border: 10px solid #285943;
 flex-basis:200px;
+width:50%;
 }
 
 .1col{
@@ -42,6 +43,7 @@ display:flex;
 flex-basis: 80px;
 background:#fff;
 padding:5px;
+
 }
 
 .col1{
@@ -104,4 +106,36 @@ nav a{
 .navbar{
     display:flex;
     justify-content:space-around;
+}
+
+@media screen and (max-width:600px){
+    .navbar{
+        float: none;
+        width:100%;
+}
+
+@media screen and (max-width:600px){
+   .twocols{
+       float:none;
+       width:100%;
+   }
+   .1col{
+       width:100%;
+   }
+   .2col{
+    width:100%;
+}
+}
+
+@media screen and (max-width:600px){
+    .threecols{
+        float:none;
+        width;100%;
+    }
+}
+@media screen and (max-width:600px){
+    .images{
+        float:none;
+        width;100%;
+    }
 }
