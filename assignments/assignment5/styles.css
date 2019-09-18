@@ -1,0 +1,29 @@
+html,body {
+    background:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+
+.box {
+    display:flex;
+    background: black;
+    height: 100%;
+    width:100;
+    align-items:center;
+    justify-content: center;
+}
+
+.container {
+    background:hotpink;
+    width: 50%;
+    height: 50%;
+    padding:30px;
+}
+
+h1 {
+    text-align: center;
+}
