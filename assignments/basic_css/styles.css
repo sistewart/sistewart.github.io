@@ -1,0 +1,236 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+a {
+    color:white;
+    background: #73000a;
+}
+.real-body{
+    margin:15px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer{
+    width:100%;
+}
+/*header*/
+.page-header {
+    background: black;
+    color: white;
+    text-align:right;
+    padding:20px;
+}
+.usc-logo{
+    position: absolute;
+    left:0px;
+    padding:10px;
+    display:block;
+    padding:20px;
+}
+.gateway {
+    background: black;
+    font-size: 12px;
+    word-spacing:5px;
+}
+.search-bar{
+    overflow:hidden;
+    background-color:black;
+    padding:20px;
+}
+.search-bar a{
+    display:block;
+    color:black;
+}
+/*navigation bar*/
+.navbar ul {
+    display:flex;
+    justify-content:space-around;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type:none;
+}
+
+.navbar li {
+    flex:auto;
+    background:#73000a;
+    text-align: center;
+    padding:10px;
+}
+
+.navbar li:hover {
+    background:#570008;
+}
+
+.navbar li a:hover {
+    background:rgb(255,0,0);
+}
+
+.navbar li a {
+    text-decoration:none;
+    text-align:center;
+}
+/*sections*/
+
+.section-realbody{
+    background: white;
+    display:flex;
+    margin:5px 30px;
+    justify-content:center;
+    width:100%;
+}
+.banner-image {
+    padding:15px;
+    justify-content: center;
+}
+
+.navigation{
+    padding:20px 2px;
+    font-size: 10px;
+}
+.top-rows{
+    background: white;
+    margin:5px 30px;
+    justify-content:center;
+    width:100%;
+}
+.title-box{
+    font-size: 36px;
+}
+.description{
+    flex-basis:75%;
+}
+.left-box{
+    float:left;
+    flex:75%;
+}
+.right-box{
+    float:right;
+    flex:25%;
+}
+.housing-communities{
+    padding:15px;
+    flex:30%;
+    margin:5px;
+    display: inline-block;
+  
+}
+
+.residence-halls{
+    padding:15px;
+    flex:3;
+    margin:5px;
+    display: inline-block;
+}
+
+.apply-housing{
+    padding:15px;
+    flex:30%;
+    margin:5px;
+    display: inline-block;
+}
+.off-campus{
+    padding:15px;
+    flex:3;
+    margin:5px;
+    display: inline-block;
+}
+
+.separator {
+    margin:10px;
+    flex:3;
+    width:70%;
+}
+h3{
+    color:white;
+}
+.small-box{
+    color:#73000a;
+}
+.value{
+    flex:1;
+    padding:30px 10px;
+    border-left: #73000a;
+}
+.housing{
+    flex:1;
+    padding:30px 10px;
+}
+.img{
+    float: left;
+    padding:10px;
+}
+.header{
+    color: #73000a;
+    font-size: 24px;
+    font-weight: bold;
+    display:inline-block;
+}
+.paragraph{
+    flex:30%;
+}
+
+/*footer*/
+.footer-list {
+    list-style-type:none;
+}
+.garnet-footer{
+    background:#73000a;
+    color:white;
+    display: flex;
+}
+
+.titles{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    color:white;
+    background:#73000a;
+}
+.article1{
+    padding:0px 578px 0px 0px;
+}
+.article2{
+    padding:0px 30px 0px 0px;
+}
+.lists{
+    flex-direction: row;
+    display:flex;
+    background:#73000a;
+    color:white;
+    padding:10px;
+}
+.col1, .col2, .col3, .col4, .col5{
+    padding:5px;
+
+}
+.black-footer{
+    background:black;
+    color:white;
+    justify-content: center;
+    text-align:center;
+    padding:5px;
+}
+/*media query*/
+@media (min-width:900px) {
+    .real-body{
+        display:flex;
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:600px){
+    .navbar ul {
+        flex-direction:column;
+    }
+
+    .navbar ul li {
+        text-align:center;
+    }
+
+}
+
