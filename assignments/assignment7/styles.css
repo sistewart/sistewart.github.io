@@ -1,0 +1,66 @@
+
+
+html,body {
+    background:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+.box {
+    display:flex;
+    background: black;
+    height: 100%;
+    width:100;
+    align-items:center;
+    justify-content: center;
+}
+
+.container-left {
+    background:hotpink;
+    width: 52%;
+    height: 70%;
+    padding:20px;
+    text-align: center;
+    justify-content: space-between;
+    margin: 40px;
+    border-radius: 15px;
+}
+
+.container-middle {
+    background:hotpink;
+    width: 52%;
+    height: 35%;
+    padding:20px;
+    text-align: center;
+    justify-content: space-evenly;
+    margin:40px;
+    border-radius:15px;
+}
+
+.container-right {
+    background:hotpink;
+    width: 52%;
+    height: 40%;
+    padding:20px;
+    text-align: center;
+    justify-content: space-evenly;
+    margin:40px;
+    border-radius:15px;
+}
+
+.input{
+    flex:auto;
+    width:100%;
+}
+
+.button{
+   margin:auto;
+    width:100%;
+}
+
+h1 {
+    text-align: center;
+}
