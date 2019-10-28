@@ -25,7 +25,7 @@ function quoteLoop(){
 function lotteryGame(){
     let randArray = [];
     let size = 5;
-
+    let match = true;
 
     let showNum = document.createElement("p");
     this.before(showNum);
@@ -49,15 +49,21 @@ function lotteryGame(){
         else{
             let spanMatch = document.getElementsByClassName("isMatch")[k];
             spanMatch.innerHTML += "not a match";
+            match = false;
         }
     }
-    if(spanMatch.innerHTML == "not a match"){
+    if(match == true){
+        let goodMsg = document.createElement("p");
+        this.after(goodMsg);
+
+        goodMsg.innerHTML = "YAY you won the lottery!";
+    }
+    else {
         let sorryMsg = document.createElement("p");
         this.after(sorryMsg);
 
         sorryMsg.innerHTML = "Better luck next time :(";
     }
-    
 }
 
 quoteLoop();

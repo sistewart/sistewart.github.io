@@ -1,0 +1,49 @@
+
+
+html,body {
+    background:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+.box {
+    display:flex;
+    background: black;
+    height: 100%;
+    width:100;
+    align-items:center;
+    justify-content: center;
+}
+
+.container{
+    background:hotpink;
+    width: 70%;
+    height: 100%;
+    padding:20px;
+    text-align: center;
+    justify-content: space-evenly;
+    margin:40px;
+    border-radius:15px;
+}
+
+.input{
+    width:100%;
+    background:black;
+    opacity:0.8;
+    color:hotpink;
+    padding:10px 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+label{
+    font-size: 26px;
+}
