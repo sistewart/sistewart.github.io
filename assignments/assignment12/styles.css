@@ -2,4 +2,24 @@
     display:flex;
     padding:20px;
     margin:auto;
+    background: black;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+}
+body{
+    background: black;;
+}
+#content{
+    background: hotpink;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.movie-content{
+    padding: 20px;
 }

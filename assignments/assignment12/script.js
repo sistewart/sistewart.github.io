@@ -17,18 +17,18 @@ function getMovie(movie){
     movieImage.className = "movieStuff";
     movieSec.append(movieImage);
 
-    let movieTxt = docment.createElement("div");
+    let movieTxt = document.createElement("div");
     movieTxt.className = "movieStuff";
     movieSec.append(movieTxt);
 
-    let movieName = document.createElement("h2");
+    let movieName = document.createElement("h3");
     movieName.innerText = movie.title;
     movieImage.append(createImage("https://portiaportia.github.io/csce242/json/"+movie.img));
     
     movieTxt.append(movieName);
     movieTxt.append(makeList("<strong>" + "Director: " + "</strong>" + movie.director));
     movieTxt.append(makeList("<strong>" + "Actors: " + "</strong>" + movie.actors + " "));
-    movieTxt.append(makeeList("<strong>" + "Year: " + "</strong>" + movie.year + " "));
+    movieTxt.append(makeList("<strong>" + "Year: " + "</strong>" + movie.year + " "));
     movieTxt.append(makeList("<strong>" + "Genres: " + "</strong>" + movie.genres + " "));
     movieTxt.append(makeDescription(movie.description));    
    
@@ -50,7 +50,7 @@ function makeList(text){
 
 function makeDescription(description){
     let addDescription = document.createElement("p");
-    addDescription.innerHTML = text;
+    addDescription.innerHTML = description;
 
     return addDescription;
 }
