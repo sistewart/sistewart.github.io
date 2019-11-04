@@ -29,16 +29,6 @@ html,body {
     border-radius:15px;
 }
 
-.input{
-    width:100%;
-    background:black;
-    opacity:0.8;
-    color:hotpink;
-    padding:10px 0px;
-    font-size: 14px;
-    text-align: center;
-}
-
 h1 {
     text-align: center;
     font-size: 40px;

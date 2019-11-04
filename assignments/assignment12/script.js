@@ -5,49 +5,62 @@ async function displayMovies(){
 
     for(i in movieJson){
         let base = movieJson[i];
-        contentDiv.append(getMovie(movie));
+        contentDiv.append(getMovie(base));
     }
 }
 
 function getMovie(movie){
     let movieSec = document.createElement("section");
     movieSec.className = "movie";
-    let movieName = document.createElement("h3");
-    movieName.innerText = movie.title;
-    movieSec.append(movieName);
-    movieSec.append(makelist(movie.director,movie.actors,movie.year,movie.genres));
-    movieSec.append(makeDescription(description));
 
+    let movieImage = document.createElement("div");
+    movieImage.className = "movieStuff";
+    movieSec.append(movieImage);
+
+    let movieTxt = docment.createElement("div");
+    movieTxt.className = "movieStuff";
+    movieSec.append(movieTxt);
+
+    let movieName = document.createElement("h2");
+    movieName.innerText = movie.title;
+    movieImage.append(createImage("https://portiaportia.github.io/csce242/json/"+movie.img));
+    
+    movieTxt.append(movieName);
+    movieTxt.append(makeList("<strong>" + "Director: " + "</strong>" + movie.director));
+    movieTxt.append(makeList("<strong>" + "Actors: " + "</strong>" + movie.actors + " "));
+    movieTxt.append(makeeList("<strong>" + "Year: " + "</strong>" + movie.year + " "));
+    movieTxt.append(makeList("<strong>" + "Genres: " + "</strong>" + movie.genres + " "));
+    movieTxt.append(makeDescription(movie.description));    
+   
+   
     return movieSec;
 }
 
-function makeList(director,actors,year,genres){
+function makeList(text){
     let ulElem = document.createElement("ul");
 
     let dirElem = document.createElement("li");
-    dirElem.innerHTML = director;
+    dirElem.innerHTML = text;
     ulElem.append(dirElem);
 
-    let actElem = document.createElement("li");
-    actElem.innerHTML = actors;
-    ulElem.append(actElem);
-
-    let yearElem = document.createElement("li");
-    yearElem.innerHTML = year;
-    ulElem.append(yearElem);
-
-    let genreElem = document.createElement("li");
-    genreElem.innerHTML = genres;
-    ulElem.append(genreElem);
+    
 
     return ulElem;
 }
 
 function makeDescription(description){
     let addDescription = document.createElement("p");
-    addDescription.innerHTML = "Description: " + movie.description;
+    addDescription.innerHTML = text;
 
     return addDescription;
+}
+
+
+function createImage(path){
+    let movImg = document.createElement("img");
+    movImg.src = path;
+
+    return movImg;
 }
 
 window.onload = function(){
